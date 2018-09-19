@@ -1,9 +1,5 @@
 import TARBSengine
 
-player = TARBSengine.Player("steve", 5, 1, 5)
+villager = TARBSengine.NPC("Strange Villager")
 
-TARBSengine.debug = True
-
-loot = ["Sword", "dagger", "bow", "knife"]
-
-player.openchest(loot)
+villager.talkto(True, "This is some debug text", "The third text wont be displayed, and it will run on the first try lol")
