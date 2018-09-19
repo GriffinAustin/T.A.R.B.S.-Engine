@@ -53,12 +53,12 @@ class Enemy:
         print("{} is dead".format(self.name))
 
 
-class Chest(Player):
-    def __init__(self, loot):
-        self.loot = loot
-        super(Player, self).__init__()
-
-    def openchest(self, loot):
-        reward = choice(loot)
-        Player.editinv(self, reward, 1)
-        debugout("Item given: {}".format(reward))
+# class Chest(Player):
+#     def __init__(self, loot):
+#         super(Chest, self).__init__(self, loot)
+#         self.loot = loot
+#
+#     def openchest(self, loot):
+#         reward = choice(loot)
+#         Player.editinv(loot, 1)
+#         debugout("Item given: {}".format(reward))
