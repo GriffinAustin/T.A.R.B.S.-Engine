@@ -1,2 +1,2 @@
 # T.A.R.B.S. Engine
-Totally accurate RPG battle simulator (school project)
+Totally accurate RPG battle simulation (school project)
