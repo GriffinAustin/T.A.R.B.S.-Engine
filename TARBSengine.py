@@ -20,6 +20,10 @@ class Player:
         self.minAtk = minatk
         self.maxAtk = maxatk
         self.inv = {}
+        self.weapon_one = None
+        self.weapon_one_atk = 0
+        self.shield = None
+        self.shiled_protect = 0
 
     def editinv(self, item, amnt):
         self.inv[item] = amnt
@@ -33,9 +37,14 @@ class Player:
     # Attak an enemy
     def atk(self, opponent):
         atk = randint(self.minAtk, self.maxAtk)
-        opponent.hp -= atk
-        print(atk)
-        print(opponent.hp)
+        totalatk = atk + self.weapon_one_atk
+        opponent.hp -= totalatk
+        debugout("Damage done: {}".format(totalatk))
+        debugout("Enemy HP: {}".format(opponent.hp))
+
+    def equiptweapon(self, weapon):
+        self.weapon_one = weapon
+        self.weapon_one_atk = weapon.atk
 
     # Make the player speak (more functionality planned)
     def say(self, text):
@@ -74,17 +83,18 @@ class Enemy:
         print("{} is dead".format(self.name))
 
 
-
 class NPC:
     def __init__(self, name):
         self.name = name
 
-    def talkto(self, name, text, *text2, **text3):
+    def talkto(self, name, text):
         if name:
             print("{}: {}".format(self.name, text))
-            print("{}: {}".format(self.name, text2))
-            print("{}: {}".format(self.name, text3))
         else:
             print("{}".format(text))
-            print("{}".format(text2))
-            print("{}".format(text3))
+
+
+class Weapon:
+    def __init__(self, name, atk):
+        self.name = name
+        self.atk = atk
