@@ -2,18 +2,24 @@ import TARBSengine
 
 TARBSengine.debug = True
 
-player = TARBSengine.Player("Steven", 5, 10, 5, 100)
+player = TARBSengine.Player("Steven", 20, 20, 5, 10)
 
-hp = TARBSengine.Potion("HP Potion", 5)
+zombie = TARBSengine.Enemy("Dave the Zombie", 11, 5, 10)
 
-print(player.inv)
+princess = TARBSengine.NPC("The Princess")
 
-player.editinv(hp, 1)
+player.atk(zombie)
 
-print(player.inv)
+zombie.atk(player)
 
-player.usepotion(hp)
+player.atk(zombie)
 
-print(player.hp)
+magic_potion = TARBSengine.Potion("Magic Health Potion", 5)
 
-print(player.inv)
+princess.talkto("Thank you for saving me", True)
+
+princess.talkto("You look hurt, here is a magic potion to heal you", True)
+
+player.editinv(magic_potion, 1)
+
+player.usepotion(magic_potion)

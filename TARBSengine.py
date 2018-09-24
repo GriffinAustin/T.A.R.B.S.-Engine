@@ -3,6 +3,7 @@ from random import randint, choice
 # Enable debugging Var
 debug = False
 
+version = "Alpha 0.1.0"
 
 # Debug output
 def debugout(text):
@@ -42,6 +43,8 @@ class Player:
         opponent.hp -= totalatk
         debugout("Damage done: {}".format(totalatk))
         debugout("Enemy HP: {}".format(opponent.hp))
+        if opponent.hp <= 0:
+            del opponent
 
     def equiptweapon(self, weapon):
         self.weapon_one = weapon
