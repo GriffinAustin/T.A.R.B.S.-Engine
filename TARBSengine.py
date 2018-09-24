@@ -13,9 +13,10 @@ def debugout(text):
 
 
 class Player:
-    def __init__(self, name, hp, minatk, maxatk):
+    def __init__(self, name, hp, maxhp, minatk, maxatk):
         self.name = name
         self.hp = hp
+        self.maxhp = maxhp
         self.inv = {}
         self.minAtk = minatk
         self.maxAtk = maxatk
@@ -46,9 +47,20 @@ class Player:
         self.weapon_one = weapon
         self.weapon_one_atk = weapon.atk
 
+    def equiptshield(self, shield):
+        self.shield = shield.name
+        self.shield_protect = shield.defence
+
     def usepotion(self, potion):
-        self.hp += potion.hp
-        debugout("{} health restored, current health: {}".format(potion.hp, self.hp))
+        if self.hp >= self.maxhp:
+            debugout("HP already at max!")
+        else:
+            self.hp += potion.hp
+            if self.hp > self.maxhp:
+                self.hp = self.maxhp
+
+            debugout("{} health restored, current health: {}".format(potion.hp, self.hp))
+            self.inv[potion] -= 1
 
     # Make the player speak (more functionality planned)
     def say(self, text):
@@ -78,13 +90,20 @@ class Enemy:
         self.minAtk = minatk
         self.maxAtk = maxatk
 
+    def atk(self, opponent):
+        atk = randint(self.minAtk, self.maxAtk)
+        totalatk = atk - opponent.shield_protect
+        opponent.hp -= totalatk
+        debugout("Damage done: {}".format(totalatk))
+        debugout("Player HP: {}".format(opponent.hp))
+
     # Make the enemy speak (more functionality planned)
     def say(self, text):
         print("{}: {}".format(self.name, text))
 
     # Debug use
     def __del__(self):
-        print("{} is dead".format(self.name))
+        debugout("{} is dead".format(self.name))
 
 
 class NPC:
@@ -108,3 +127,9 @@ class Potion:
     def __init__(self, name, hp):
         self.name = name
         self.hp = hp
+
+
+class Shield:
+    def __init__(self, name, defence):
+        self.name = name
+        self.defence = defence
