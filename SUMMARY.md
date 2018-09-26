@@ -1,14 +1,14 @@
 # Table of contents
 
-* [Welcome](README.md)
-
-## Home
-
-* [Quickstart Guide](home/quickstart-guide.md)
-* [Changelog](home/changelog.md)
+* [Home](README.md)
+* [Quickstart Guide](quickstart-guide.md)
+* [Changelog](changelog.md)
+* [FAQ](faq.md)
 
 ## Documentation
 
 * [Getting Started](documentation/getting-started.md)
-* [Untitled](documentation/untitled.md)
+* [1. Player](documentation/1.-player.md)
+
+## Examples
 
