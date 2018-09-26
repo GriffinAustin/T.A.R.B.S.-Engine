@@ -1,23 +1,16 @@
 # Getting Started
 
-## Getting Super Powers
+## Installation and Setup
 
-Becoming a super hero is a fairly straight forward process:
+As of now, T.A.R.B.S. is not supported with pip. Pip support is coming in beta 1.0.
 
-```
-$ give me super-powers
-```
+1. Download the latest release [here](https://github.com/tman540/T.A.R.B.S.-Engine/releases)
+2. Extract the engine to your project folder
+3. Read the [Quickstart ](../home/quickstart-guide.md)guide or reference the documentation
 
-{% hint style="info" %}
- Super-powers are granted randomly so please submit an issue if you're not happy with yours.
+{% hint style="warning" %}
+T.A.R.B.S. Engine is only supported in python 3 or above. You cannot use python 2 or below.
 {% endhint %}
-
-Once you're strong enough, save the world:
-
-```
-// Ain't no code for that yet, sorry
-echo 'You got to trust me on this, I saved the world'
-```
 
 
 
