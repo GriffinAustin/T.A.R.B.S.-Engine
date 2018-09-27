@@ -67,7 +67,7 @@ princess.talkto("Thank you for saving me", True)
 ```
 
 {% hint style="info" %}
-Note: Using True or False as a second argument will decide if the NPC's name will show up when speaking
+Using True or False as a second argument will decide if the NPC's name will show up when speaking
 {% endhint %}
 
 Now, let's edit the player's inventory to add a potion.
