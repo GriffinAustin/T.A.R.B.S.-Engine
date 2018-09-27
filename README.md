@@ -2,7 +2,7 @@
 description: T.A.R.B.S. Engine Alpha v0.1.0
 ---
 
-# Home
+# Welcome
 
 ## T.A.R.B.S. Engine
 

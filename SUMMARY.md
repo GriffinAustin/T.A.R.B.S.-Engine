@@ -1,9 +1,12 @@
 # Table of contents
 
-* [Home](README.md)
-* [Quickstart Guide](quickstart-guide.md)
-* [Changelog](changelog.md)
-* [FAQ](faq.md)
+* [Welcome](README.md)
+
+## Home
+
+* [Quickstart Guide](home/quickstart-guide.md)
+* [Changelog](home/changelog.md)
+* [FAQ](home/faq.md)
 
 ## Documentation
 
