@@ -46,11 +46,11 @@ class Player:
         if opponent.hp <= 0:
             del opponent
 
-    def equiptweapon(self, weapon):
+    def equipweapon(self, weapon):
         self.weapon_one = weapon
         self.weapon_one_atk = weapon.atk
 
-    def equiptshield(self, shield):
+    def equipshield(self, shield):
         self.shield = shield.name
         self.shield_protect = shield.defence
 
