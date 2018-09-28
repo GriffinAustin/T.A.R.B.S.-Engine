@@ -113,7 +113,7 @@ class NPC:
     def __init__(self, name):
         self.name = name
 
-    def talkto(self, name, text):
+    def talkto(self, text, *name,):
         if name:
             print("{}: {}".format(self.name, text))
         else:
