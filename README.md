@@ -4,7 +4,7 @@ description: T.A.R.B.S. Engine Alpha v0.1.0
 
 # Welcome
 
-## T.A.R.B.S. Engine
+## T.A.R.B.S. Engine Alpha
 
 T.A.R.B.S. Engine is a small project I'm working on out of pure boredom and for practice. It is a text based game engine for python3.
 
