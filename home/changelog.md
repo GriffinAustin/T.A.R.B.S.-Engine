@@ -1,5 +1,11 @@
 # Changelog
 
+## !!! THIS IS JUST A PLACE HOLDER !!!
+
+{% hint style="danger" %}
+This will be updated with the release of Alpha 0.2.0
+{% endhint %}
+
 ## 15.0.0 - 2042-12-03
 
 ### Fixed
