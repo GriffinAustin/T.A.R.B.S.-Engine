@@ -15,6 +15,9 @@
 * [2. Enemy](documentation/2.-enemy.md)
 * [3. NPC](documentation/3.-npc.md)
 * [4. Weapon](documentation/4.-weapon.md)
+* [5. Potion](documentation/5.-potion.md)
+* [6. Shield](documentation/6.-shield.md)
+* [7. Debugging](documentation/7.-debugging.md)
 
 ## Examples
 
