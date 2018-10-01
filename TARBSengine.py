@@ -52,7 +52,7 @@ class Player:
 
     def equipshield(self, shield):
         self.shield = shield.name
-        self.shield_protect = shield.defence
+        self.shield_protect = shield.defense
 
     def usepotion(self, potion):
         if self.hp >= self.maxhp:
@@ -133,6 +133,6 @@ class Potion:
 
 
 class Shield:
-    def __init__(self, name, defence):
+    def __init__(self, name, defense):
         self.name = name
-        self.defence = defence
+        self.defense = defense
