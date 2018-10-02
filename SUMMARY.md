@@ -19,5 +19,3 @@
 * [6. Shield](documentation/6.-shield.md)
 * [7. Debugging](documentation/7.-debugging.md)
 
-## Examples
-

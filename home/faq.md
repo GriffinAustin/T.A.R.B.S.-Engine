@@ -1,7 +1,3 @@
----
-description: Frequently Asked Questions
----
-
 # FAQ
 
 ## Will TARBS ever support python 2?
