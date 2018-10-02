@@ -3,7 +3,7 @@ from random import randint, choice
 # Enable debugging Var
 debug = False
 
-version = "Alpha 0.1.0"
+version = "Alpha 0.2.0"
 
 
 # Debug output
