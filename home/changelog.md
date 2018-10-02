@@ -1,5 +1,11 @@
 # Changelog
 
+{% hint style="warning" %}
+Multiple versions of the changelog will be available once version 1.0 is released.
+{% endhint %}
+
+## 
+
 ## Alpha 0.2.0 - October 7th, 2018
 
 ### Changes
