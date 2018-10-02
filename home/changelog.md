@@ -28,5 +28,3 @@
 * You can now communicate player thoughts by using `Player.think`. Thanks Antti Haapala3
 * Added `Player.unequipweapon` and `Player.unequipshield` to un-equip weapons and shields.
 
-
-
