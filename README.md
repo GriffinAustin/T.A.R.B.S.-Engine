@@ -1,5 +1,5 @@
 ---
-description: T.A.R.B.S. Engine Alpha v0.1.0
+description: T.A.R.B.S. Engine Alpha v0.2.2
 ---
 
 # Welcome
@@ -8,7 +8,7 @@ description: T.A.R.B.S. Engine Alpha v0.1.0
 
 T.A.R.B.S. Engine is a small project I'm working on out of pure boredom and for practice. It is a text based game engine for python3.
 
-[![CodeFactor](https://www.codefactor.io/repository/github/tman540/t.a.r.b.s.-engine/badge)](https://www.codefactor.io/repository/github/tman540/t.a.r.b.s.-engine) ![MadeWithPython](https://img.shields.io/badge/Made%20with-Python-blue.svg) ![Version](https://img.shields.io/badge/Version-Alpha%200.2.0-a620df.svg)
+[![CodeFactor](https://www.codefactor.io/repository/github/tman540/t.a.r.b.s.-engine/badge)](https://www.codefactor.io/repository/github/tman540/t.a.r.b.s.-engine) ![MadeWithPython](https://img.shields.io/badge/Made%20with-Python-blue.svg) ![Version](https://img.shields.io/badge/Version-Alpha%200.2.2-a620df.svg)
 
 Notable Features:
 
@@ -18,7 +18,7 @@ Notable Features:
 * Cross platform!
 * Useful debugging functionality
 
-[Download ](https://github.com/tman540/T.A.R.B.S.-Engine/releases)- Latest Release: Alpha 0.2.0
+[Download ](https://github.com/tman540/T.A.R.B.S.-Engine/releases)- Latest Release: Alpha 0.2.2
 
 Open the repository [here](https://github.com/tman540/T.A.R.B.S.-Engine).
 
