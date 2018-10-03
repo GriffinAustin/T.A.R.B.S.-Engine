@@ -62,3 +62,5 @@ target/
 test\.py
 
 debug\.py
+
+log\.log

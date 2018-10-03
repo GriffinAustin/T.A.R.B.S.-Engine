@@ -1,15 +1,23 @@
 from random import randint, choice
+import logging
+from datetime import datetime
+
+log = "debug.log"
+logging.basicConfig(filename=log,level=logging.DEBUG)
+
+logging.debug(" Run from {}".format(datetime.now()))
 
 # Enable debugging Var
 debug = False
 
-version = "Alpha 0.2.0"
+version = "Alpha 0.2.2"
 
 
 # Debug output
 def debugout(text):
     if debug:
         print(text)
+        logging.debug(" {}: {}".format(datetime.now().strftime("%H:%M:%S"), text))
     else:
         pass
 
@@ -29,14 +37,14 @@ class Player:
 
     def additem(self, item, amnt):
         item.amnt += amnt
-        debugout("Debugger: item given {} x {}".format(item.name, amnt))
+        debugout("Debugger: item given: {} x {}".format(item.name, amnt))
 
     # Remove an item from the player
     def removeitem(self, item, amnt):
         item.amnt -= amnt
-        debugout("Debugger: removed {} x {} from player".format(amnt, item.name))
+        debugout("Debugger: removed: {} x {} from player".format(amnt, item.name))
 
-    # Attak an enemy
+    # Attack an enemy
     def atk(self, opponent):
         atk = randint(self.minAtk, self.maxAtk)
         totalatk = atk + self.weapon_one_atk
@@ -114,7 +122,7 @@ class Player:
     def openchest(self, loot):
         reward = choice(loot)
         debugout("Reward from chest: {}".format(reward.name))
-        self.editinv(reward, 1)
+        self.additem(reward, 1)
 
     # noinspection PyMethodMayBeStatic
     def kill(self, deathmessage, *endgame):
