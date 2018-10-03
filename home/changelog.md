@@ -10,7 +10,7 @@
 
 ### Added
 
-* Logging: on every run, a log file keeps track of all of the events take have debug output.
+* Logging: on every run, a log file keeps track of all of the events that have debug output.
 
 ## Alpha 0.2.0 - October 2th, 2018
 
