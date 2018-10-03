@@ -3,12 +3,14 @@
 ## Alpha 0.2.2 - October 3rd, 2018
 
 ### Fixes
+
 * Fixed an error with the `Player.openchest` function that resulted in using 
-`Player.editinv` which is a deprecated function. 
+
+  `Player.editinv` which is a deprecated function. 
 
 ### Added
-* Logging: on every run, a log file keeps track of all of the events take have debug output.
 
+* Logging: on every run, a log file keeps track of all of the events take have debug output.
 
 ## Alpha 0.2.0 - October 2th, 2018
 
