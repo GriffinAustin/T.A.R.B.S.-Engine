@@ -67,7 +67,7 @@ class Player:
         log("Enemy HP: {}".format(opponent.hp))
         if opponent.hp <= 0:
             del opponent
-            log("Debugging: {} deleted".format(opponent))
+            log("Debugging: Opponent deleted")
 
     def equipweapon(self, weapon):
         if weapon.amnt > 0:
@@ -188,10 +188,6 @@ class Enemy:
         print("{}: {}".format(self.name, text))
         log("{}: {}".format(self.name, text))
 
-    # Debug use
-    def __del__(self):
-        debugout("{} is dead".format(self.name))
-        log("{} is dead".format(self.name))
 
 
 class NPC:
