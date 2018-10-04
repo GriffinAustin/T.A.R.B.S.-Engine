@@ -3,10 +3,12 @@
 ## Alpha 0.3.0 - October 3rd, 2018
 
 ### Added
-* Logging separate from debugging. Information here.
-* Custom function for getting user input (`userinput()`). This is used so logging and debugging is easier.
+
+* Logging separate from debugging. Information [here](../documentation/7.-debugging.md#8-2-logging).
+* Custom function for getting user input \(`getinput()`\). This is used so logging and debugging is easier.
 
 ### Changes
+
 * A new log is generated every time the program is run.
 
 ## Alpha 0.2.2 - October 3rd, 2018
@@ -14,7 +16,8 @@
 ### Fixes
 
 * Fixed an error with the `Player.openchest` function that resulted in using 
-`Player.editinv` which is a deprecated function. 
+
+  `Player.editinv` which is a deprecated function. 
 
 ### Added
 

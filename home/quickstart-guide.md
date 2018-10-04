@@ -8,10 +8,11 @@ First, you need to import the module.
 import TARBSengine
 ```
 
-An important step in software development is debugging. Luckily, T.A.R.B.S. comes with a debugger. We can enable it by setting the `TARBSengine.debug` variable to true.
+An important step in software development is debugging. Luckily, T.A.R.B.S. comes with a debugger. We can enable it by setting the `TARBSengine.debug` variable to true. We can also enable logging by doing something similar.
 
 ```python
 TARBSengine.debug = True
+TARBSengine.enable_logging = True
 ```
 
 Next, you need to create a player instance from the Player class
@@ -74,7 +75,7 @@ Now, let's edit the player's inventory to add a potion.
 
 ```python
 princess.talkto("You look hurt, here is a magic potion to heal you", True) 
-player.editinv(magic_potion, 1)
+player.additem(magic_potion, 1)
 ```
 
 Now that the player has the magic potion, let's use the `Player.usepotion()` function to drink the potion and heal.
@@ -88,6 +89,7 @@ Here is the full code if you want to copy it:
 ```python
 import TARBSengine
 TARBSengine.debug = True
+TARBSengine.enable_logging = True
 player = TARBSengine.Player("Steven", 20, 20, 5, 10)
 zombie = TARBSengine.Enemy("Dave the Zombie", 11, 5, 10)
 princess = TARBSengine.NPC("The Princess")
@@ -97,7 +99,7 @@ player.atk(zombie)
 magic_potion = TARBSengine.Potion("Magic Health Potion", 5)
 princess.talkto("Thank you for saving me", True)
 princess.talkto("You look hurt, here is a magic potion to heal you", True)
-player.editinv(magic_potion, 1)
+player.additem(magic_potion, 1)
 player.usepotion(magic_potion)
 ```
 

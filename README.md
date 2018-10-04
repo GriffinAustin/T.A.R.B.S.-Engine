@@ -18,7 +18,7 @@ Notable Features:
 * Cross platform!
 * Useful debugging functionality
 
-[Download ](https://github.com/tman540/T.A.R.B.S.-Engine/releases)- Latest Release: Alpha 0.2.2
+[Download ](https://github.com/tman540/T.A.R.B.S.-Engine/releases)- Latest Release: Alpha 0.3.0
 
 Open the repository [here](https://github.com/tman540/T.A.R.B.S.-Engine).
 
