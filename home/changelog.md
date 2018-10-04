@@ -1,5 +1,13 @@
 # Changelog
 
+## Alpha 0.3.1 - October 4th, 2018
+
+### Added
+* Added `initlogging()` that prevents logs from being generated if logging is disabled.
+
+### Changes
+* Cleaned up the source code a bit.
+
 ## Alpha 0.3.0 - October 3rd, 2018
 
 ### Added
@@ -10,6 +18,7 @@
 ### Changes
 
 * A new log is generated every time the program is run.
+
 
 ## Alpha 0.2.2 - October 3rd, 2018
 
@@ -22,6 +31,7 @@
 ### Added
 
 * Logging: on every run, a log file keeps track of all of the events that have debug output.
+
 
 ## Alpha 0.2.0 - October 2th, 2018
 

@@ -2,34 +2,37 @@
 from random import randint, choice
 import logging
 from datetime import datetime
+import os
 
 currenttime = datetime.now().strftime("%I.%M.%S")
 
-log = "{}_log.log".format(currenttime)
-logging.basicConfig(filename=log, level=logging.DEBUG)
-
-logging.debug(" Run from {}".format(datetime.now().strftime("%I:%M:%S")))
+logfile = "{}_log.log".format(currenttime)
 
 # Enable debugging and logging var
 debug = False
 enable_logging = False
 
-version = "Alpha 0.3.0"
+version = "Alpha 0.3.1"
 
 
 # Debug output
 def debugout(text):
     if debug:
         print(text)
-    else:
-        pass
+
+
+def initlogging():
+    if enable_logging:
+        logging.basicConfig(filename=logfile, level=logging.DEBUG)
+        logging.debug(" Run from {}".format(datetime.now().strftime("%I:%M:%S")))
 
 
 def log(text):
     if enable_logging:
         logging.debug(" {}: {}".format(datetime.now().strftime("%I:%M:%S"), text))
-    else:
-        pass
+
+
+initlogging()
 
 
 # noinspection PyMethodMayBeStatic
@@ -187,7 +190,6 @@ class Enemy:
     def say(self, text):
         print("{}: {}".format(self.name, text))
         log("{}: {}".format(self.name, text))
-
 
 
 class NPC:
