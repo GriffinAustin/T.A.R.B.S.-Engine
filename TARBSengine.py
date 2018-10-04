@@ -159,7 +159,6 @@ class Player:
             exit()
         else:
             log("Game didn't end on player death")
-            pass
 
     def getinput(self, prompt):
         usr = input(prompt)
