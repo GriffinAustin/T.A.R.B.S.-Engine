@@ -1,5 +1,11 @@
 # Changelog
 
+## Alpha 0.3.2 - October 5th, 2018
+
+### Fixes
+* Fixed logging: logs wouldn't generate. (View how to enable logs here)
+
+
 ## Alpha 0.3.1 - October 4th, 2018
 
 ### Added

@@ -8,11 +8,11 @@ currenttime = datetime.now().strftime("%I.%M.%S")
 
 logfile = "{}_log.log".format(currenttime)
 
-# Enable debugging and logging var
+# Enable debugging var
 debug = False
 enable_logging = False
 
-version = "Alpha 0.3.1"
+version = "Alpha 0.3.2"
 
 
 # Debug output
@@ -22,17 +22,14 @@ def debugout(text):
 
 
 def initlogging():
-    if enable_logging:
-        logging.basicConfig(filename=logfile, level=logging.DEBUG)
-        logging.debug(" Run from {}".format(datetime.now().strftime("%I:%M:%S")))
+    enable_logging = True
+    logging.basicConfig(filename=logfile, level=logging.DEBUG)
+    logging.debug(" Run from {}".format(datetime.now().strftime("%I:%M:%S")))
 
 
 def log(text):
     if enable_logging:
         logging.debug(" {}: {}".format(datetime.now().strftime("%I:%M:%S"), text))
-
-
-initlogging()
 
 
 # noinspection PyMethodMayBeStatic
