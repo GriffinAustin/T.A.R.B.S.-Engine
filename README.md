@@ -8,7 +8,7 @@ description: T.A.R.B.S. Engine Alpha v0.3.2
 
 T.A.R.B.S. Engine is a small project I'm working on out of pure boredom and for practice. It is a text based game engine for python3.
 
-[![CodeFactor](https://www.codefactor.io/repository/github/tman540/t.a.r.b.s.-engine/badge)](https://www.codefactor.io/repository/github/tman540/t.a.r.b.s.-engine) ![MadeWithPython](https://img.shields.io/badge/Made%20with-Python-blue.svg) ![Version](https://img.shields.io/badge/Version-Alpha%200.3.1-a620df.svg)
+[![CodeFactor](https://www.codefactor.io/repository/github/tman540/t.a.r.b.s.-engine/badge)](https://www.codefactor.io/repository/github/tman540/t.a.r.b.s.-engine) ![MadeWithPython](https://img.shields.io/badge/Made%20with-Python-blue.svg) ![Version](https://img.shields.io/badge/Version-Alpha%200.3.2-a620df.svg)
 
 Notable Features:
 
