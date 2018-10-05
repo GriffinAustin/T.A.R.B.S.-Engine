@@ -8,11 +8,11 @@ First, you need to import the module.
 import TARBSengine
 ```
 
-An important step in software development is debugging. Luckily, T.A.R.B.S. comes with a debugger. We can enable it by setting the `TARBSengine.debug` variable to true. We can also enable logging by doing something similar.
+An important step in software development is debugging. Luckily, T.A.R.B.S. comes with a debugger. We can enable it by setting the `TARBSengine.debug` variable to true. We can also enable logging by calling the `TARBSengine.initlogging()`.
 
 ```python
 TARBSengine.debug = True
-TARBSengine.enable_logging = True
+TARBSengine.initlogging()
 ```
 
 Next, you need to create a player instance from the Player class
@@ -89,7 +89,7 @@ Here is the full code if you want to copy it:
 ```python
 import TARBSengine
 TARBSengine.debug = True
-TARBSengine.enable_logging = True
+TARBSengine.initlogging()
 player = TARBSengine.Player("Steven", 20, 20, 5, 10)
 zombie = TARBSengine.Enemy("Dave the Zombie", 11, 5, 10)
 princess = TARBSengine.NPC("The Princess")

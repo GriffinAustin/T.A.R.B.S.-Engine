@@ -1,5 +1,5 @@
 ---
-description: T.A.R.B.S. Engine Alpha v0.3.1
+description: T.A.R.B.S. Engine Alpha v0.3.2
 ---
 
 # Welcome
@@ -18,7 +18,7 @@ Notable Features:
 * Cross platform!
 * Useful debugging functionality
 
-[Download ](https://github.com/tman540/T.A.R.B.S.-Engine/releases)- Latest Release: Alpha 0.3.1
+[Download ](https://github.com/tman540/T.A.R.B.S.-Engine/releases)- Latest Release: Alpha 0.3.2
 
 Open the repository [here](https://github.com/tman540/T.A.R.B.S.-Engine).
 

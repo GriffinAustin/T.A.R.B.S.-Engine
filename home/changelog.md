@@ -3,15 +3,17 @@
 ## Alpha 0.3.2 - October 5th, 2018
 
 ### Fixes
-* Fixed logging: logs wouldn't generate. (View how to enable logs here)
 
+* Fixed logging: logs wouldn't generate. \(View how to enable logs here\)
 
 ## Alpha 0.3.1 - October 4th, 2018
 
 ### Added
+
 * Added `initlogging()` that prevents logs from being generated if logging is disabled.
 
 ### Changes
+
 * Cleaned up the source code a bit.
 
 ## Alpha 0.3.0 - October 3rd, 2018
@@ -25,19 +27,17 @@
 
 * A new log is generated every time the program is run.
 
-
 ## Alpha 0.2.2 - October 3rd, 2018
 
 ### Fixes
 
-* Fixed an error with the `Player.openchest` function that resulted in using 
+* Fixed an error with the `Player.openchest` function that resulted in using
 
-  `Player.editinv` which is a deprecated function. 
+  `Player.editinv` which is a deprecated function.
 
 ### Added
 
 * Logging: on every run, a log file keeps track of all of the events that have debug output.
-
 
 ## Alpha 0.2.0 - October 2th, 2018
 
