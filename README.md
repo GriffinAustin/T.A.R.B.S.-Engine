@@ -20,6 +20,8 @@ Notable Features:
 
 [Download ](https://github.com/tman540/T.A.R.B.S.-Engine/releases)- Latest Release: Alpha 0.3.2
 
+[Engine ](https://tarbs.statuspal.io/)[Status](https://tarbs.statuspal.io/)
+
 Open the repository [here](https://github.com/tman540/T.A.R.B.S.-Engine).
 
 This [documentation ](https://tautonico-enterprises.gitbook.io/tarbs/)will contain:
