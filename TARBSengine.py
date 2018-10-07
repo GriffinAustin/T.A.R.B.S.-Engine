@@ -43,6 +43,7 @@ class Player:
         self.maxAtk = maxatk
         self.weapon_one = None
         self.weapon_one_atk = 0
+        self.armor = None
         self.shield = None
         self.shield_protect = 0
 
