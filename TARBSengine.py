@@ -3,6 +3,7 @@ from random import randint, choice
 import logging
 from datetime import datetime
 import os
+from enum import Enum
 
 currenttime = datetime.now().strftime("%I.%M.%S")
 
@@ -214,6 +215,20 @@ class Potion:
         self.amnt = 0
         self.name = name
         self.hp = hp
+
+class Armor:
+    class ArmorType(Enum):
+        HEAD = 1
+        BODY = 2
+        LEG = 3
+        HAND = 4
+        FOOT = 5
+    def __init__(self, name, defense, weight, atype):
+        self.name = name
+        self.defense = defense
+        self.amnt = 0
+        self.weight = weight
+        self.type = self.ArmorType(atype.value)
 
 
 class Shield:
